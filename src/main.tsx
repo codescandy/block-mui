@@ -6,6 +6,8 @@ import theme from './theme';
 import App from './App';
 import AppAppBar from './AppAppBar';
 import Hero from './Hero';
+import Clients from './Clients';
+import Features from './Features';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -14,6 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <App />
       <AppAppBar />
       <Hero />
+      <Clients />
+      <Features/>
     </ThemeProvider>
   </React.StrictMode>
 );
