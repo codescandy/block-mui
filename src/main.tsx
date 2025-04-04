@@ -9,13 +9,11 @@ import Hero from './Hero';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-         <ThemeProvider theme={theme}>
-   <CssBaseline />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <App />
       <AppAppBar />
       <Hero />
-    </ThemeProvider >
-     
-  
-  </React.StrictMode>,
+    </ThemeProvider>
+  </React.StrictMode>
 );
