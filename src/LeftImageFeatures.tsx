@@ -13,19 +13,19 @@ import {
   const avatarData = [
     {
       name: 'Jitu Doe',
-      img: '../public/images/avatar/avatar-1.jpg',
+      img: '/images/avatar/avatar-1.jpg',
       role: 'Designer',
       color: 'primary',
     },
     {
       name: 'Anita Par',
-      img: '../public/images/avatar/avatar-2.jpg',
+      img: '/images/avatar/avatar-2.jpg',
       role: 'UI Developer',
       color: 'info',
     },
     {
       name: 'Sandip',
-      img: '../public/images/avatar/avatar-4.jpg',
+      img: '/images/avatar/avatar-4.jpg',
       role: 'Stack Developer',
       color: 'success',
     },
@@ -65,7 +65,7 @@ import {
               <Box sx={{ position: 'relative',  }}>
                 <Box
                   component="img"
-                  src="/public/images/saas/saas-img-1.jpg"
+                  src="/images/saas/saas-img-1.jpg"
                   alt="landing"
                   sx={{ borderRadius: 4, width: '100%' }}
                 />

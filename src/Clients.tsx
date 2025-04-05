@@ -7,11 +7,11 @@ import 'swiper/css/pagination';
 
 const Clients = () => {
   const clientLogos = [
-    '../public/images/client-logo/clients-logo-1.svg',
-    '../public/images/client-logo/clients-logo-2.svg',
-    '../public/images/client-logo/clients-logo-3.svg',
-    '../public/images/client-logo/clients-logo-4.svg',
-    '../public/images/client-logo/clients-logo-5.svg',
+    '/images/client-logo/clients-logo-1.svg',
+    '/images/client-logo/clients-logo-2.svg',
+    '/images/client-logo/clients-logo-3.svg',
+    '/images/client-logo/clients-logo-4.svg',
+    '/images/client-logo/clients-logo-5.svg',
   ];
 
   return (
