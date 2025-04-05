@@ -1,38 +1,40 @@
 import { Container, Grid, Typography, Box } from "@mui/material";
-import { CheckCircle, Flag, History, ViewCompact, AttachFile, People } from "@mui/icons-material";
+import { CheckCircleOutlined, OutlinedFlagOutlined, HistoryOutlined, ViewCompactAltOutlined, AttachFileOutlined, PeopleOutlineOutlined } from "@mui/icons-material";
+import { fontSize } from "@mui/system";
 
 const features = [
-  { icon: <CheckCircle color="primary" fontSize="large" />, title: "Tasks", description: "Break work into manageable pieces for you and your team." },
-  { icon: <Flag color="primary" fontSize="large" />, title: "Milestones", description: "Visualise significant checkpoints in your project." },
-  { icon: <History color="primary" fontSize="large" />, title: "Due dates and times", description: "Specify the date and time something is due." },
-  { icon: <ViewCompact color="primary" fontSize="large" />, title: "Custom templates", description: "Create your own project templates." },
-  { icon: <AttachFile color="primary" fontSize="large" />, title: "Attachments", description: "Add files from various sources to any task." },
-  { icon: <People color="primary" fontSize="large" />, title: "Teammate", description: "Understand teammate workloads by viewing assigned tasks." }
+  { icon: <CheckCircleOutlined color="primary" fontSize="medium" />, title: "Tasks", description: "Break work into manageable pieces for you and your team." },
+  { icon: <OutlinedFlagOutlined color="primary" fontSize="medium" />, title: "Milestones", description: "Visualise significant checkpoints in your project." },
+  { icon: <HistoryOutlined color="primary" fontSize="medium" />, title: "Due dates and times", description: "Specify the date and time something is due." },
+  { icon: <ViewCompactAltOutlined color="primary" fontSize="medium" />, title: "Custom templates", description: "Create your own project templates." },
+  { icon: <AttachFileOutlined color="primary" fontSize="medium" />, title: "Attachments", description: "Add files from various sources to any task." },
+  { icon: <PeopleOutlineOutlined color="primary" fontSize="medium" />, title: "Teammate", description: "Understand teammate workloads by viewing assigned tasks." }
 ];
 
 const Features = () => {
   return (
-    <section className="my-20 py-10">
-      <Container>
+ 
+      <Container  sx={{ mb: 10 }}>
         <Box textAlign="center" mb={8}>
-          <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 2 }}>
+          <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3 }}>
             Features
           </Typography>
-          <Typography variant="h4" component={'h2'} className="my-3">
+          <Typography variant="h5" component={'h2'}  sx={{ mb: 2, fontWeight: '600' }}>
             Features to make you stand out
           </Typography>
-          <Typography variant="body1" className="max-w-2xl mx-auto">
+          <Typography  sx={{ maxWidth: '600px', mx: 'auto', color: 'text.secondary' }}>
             Manage your projects from start to finish. With all of your projects in Block, you’ll always know who’s doing what, by when.
           </Typography>
         </Box>
         <Grid container spacing={7}>
           {features.map((feature, index) => (
-            <Grid size={{ xs: 12, sm: 6, md: 4}}>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <Box textAlign={{ xs: "center", md: "left" }}>
-                <Box className="icon-lg icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle mb-5 flex items-center justify-center w-16 h-16 mx-auto md:mx-0">
+                <Box sx={{ mb: 3, display: "flex", justifyContent: "center", alignItems: "center", width: "46px", height: "46px", borderRadius: "12px", backgroundColor: "primary.light", backgroundOpacity: 0.1 }}>
+
                   {feature.icon}
                 </Box>
-                <Typography variant="h5" gutterBottom>
+                <Typography variant="h5" sx={{ fontSize: '18px', fontWeight: '600' }} gutterBottom>
                   {feature.title}
                 </Typography>
                 <Typography variant="body1" color="textSecondary">
@@ -43,7 +45,7 @@ const Features = () => {
           ))}
         </Grid>
       </Container>
-    </section>
+    
   );
 };
 

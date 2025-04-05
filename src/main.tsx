@@ -8,6 +8,9 @@ import AppAppBar from './AppAppBar';
 import Hero from './Hero';
 import Clients from './Clients';
 import Features from './Features';
+import LeftImageFeatures from './LeftImageFeatures';
+import RightImageFeatures from './RightImageFeatures';
+import Testimonials from './Testimonials';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -18,6 +21,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Hero />
       <Clients />
       <Features/>
+      <LeftImageFeatures/>
+      <RightImageFeatures/>
+      <Testimonials/>
     </ThemeProvider>
   </React.StrictMode>
 );

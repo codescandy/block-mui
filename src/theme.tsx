@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
-import "@fontsource/inter"; // Defaults to weight 400 with normal style
+import "@fontsource/public-sans"; // Defaults to weight 400 with normal style
 
 // A custom theme for this app
 const theme = createTheme({
@@ -8,7 +8,7 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#8b3dff", // Blue (Default MUI primary)
-      light: "#42A5F5", // Light blue
+      light: "#e8d8ff", // Light blue
       dark: "#6f31cc", // Dark blue
     },
     secondary: {
