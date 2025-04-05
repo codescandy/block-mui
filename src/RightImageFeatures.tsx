@@ -17,17 +17,17 @@ import {
   const avatarData = [
     {
       
-      img: './public/images/avatar/avatar-4.jpg',
+      img: '../public/images/avatar/avatar-4.jpg',
      
     },
     {
       
-      img: './public/images/avatar/avatar-5.jpg',
+      img: '../public/images/avatar/avatar-5.jpg',
      
     },
     {
       
-        img: './public/images/avatar/avatar-6.jpg',
+        img: '../public/images/avatar/avatar-6.jpg',
        
       },
       
