@@ -11,6 +11,7 @@ import Features from './Features';
 import LeftImageFeatures from './LeftImageFeatures';
 import RightImageFeatures from './RightImageFeatures';
 import Testimonials from './Testimonials';
+import AppButtons from './AppButtons';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -23,7 +24,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Features/>
       <LeftImageFeatures/>
       <RightImageFeatures/>
+     
+      
       <Testimonials/>
+      <AppButtons/>
     </ThemeProvider>
   </React.StrictMode>
 );

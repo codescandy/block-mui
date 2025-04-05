@@ -1,0 +1,35 @@
+.marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee-content {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 20s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  .marquee-wrapper:hover .marquee-content {
+    animation-play-state: running;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+  @keyframes marquee-left {
+    to {
+       transform: translateX(0);
+    }
+ 
+    from {
+       transform: translateX(-50%);
+    }
+ }
