@@ -6,7 +6,20 @@ import "@fontsource/public-sans"; // Defaults to weight 400 with normal style
 const theme = createTheme({
   cssVariables: true,
   palette: {
-    primary: {
+    grey: {
+      50: "#f9f9f9",
+      100: "#f0f0f0",
+      200: "#e0e0e0",
+      300: "#c0c0c0",
+      400: "#a0a0a0",
+      500: "#808080",
+      600: "#707070",
+      700: "#505050",
+      800: "#404040",
+      900: "#202020",
+    },
+
+      primary: {
       main: "#8b3dff", // Blue (Default MUI primary)
       light: "#e8d8ff", // Light blue
       dark: "#6f31cc", // Dark blue
@@ -37,9 +50,10 @@ const theme = createTheme({
       dark: "#01579B",
     },
     
+    
   },
   typography: {
-    fontFamily: "'Inter', sans-serif",
+    fontFamily: "'public-sans', sans-serif",
   },
   components: {
     MuiButton: {
@@ -68,9 +82,9 @@ const theme = createTheme({
           },
         },
         text: {
-          color: "#1976D2",
+          color: "primary.main",
           "&:hover": {
-            backgroundColor: "rgba(25, 118, 210, 0.08)",
+            backgroundColor: "primary.dark",
           },
         },
       },

@@ -12,6 +12,8 @@ import LeftImageFeatures from './LeftImageFeatures';
 import RightImageFeatures from './RightImageFeatures';
 import Testimonials from './Testimonials';
 import AppButtons from './AppButtons';
+import Cta from './Cta';
+import Footer from './Footer';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -27,7 +29,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
      
       
       <Testimonials/>
-      <AppButtons/>
+      <AppButtons/> 
+      <Cta/>
+      <Footer/>
     </ThemeProvider>
   </React.StrictMode>
 );

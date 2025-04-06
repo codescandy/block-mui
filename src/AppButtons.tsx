@@ -4,7 +4,7 @@ import './theme/marquee.css';
 // JSON data for integrations
 const integrations = [
     
-  { name: 'MsTeam', logo: '/images/client-logo/integrate-logo-1.svg' },
+  { name: 'MsTeams', logo: '/images/integration-logo/integrate-logo-1.svg' },
   { name: 'Zoom', logo: '/images/integration-logo/integrate-logo-2.svg' },
   { name: 'Tableau', logo: '/images/integration-logo/integrate-logo-3.svg' },
   { name: 'Slack', logo: '/images/integration-logo/integrate-logo-4.svg' },
@@ -79,7 +79,7 @@ export default function IntegrateAppsSection() {
                       height={16}
                     />
                   }
-                  sx={{ lineHeight: 1.4, color:'black', textTransform: 'none', mx: 1, px: 7, fontSize:'12px', fontWeight: '500', borderRadius:'50px', bgcolor:'#f1f5f9' }}
+                  sx={{ lineHeight: 1.6, color:'#64748b', textTransform: 'none', mx: 1, px: 7, fontSize:'14px', fontWeight: '600', borderRadius:'50px', bgcolor:'#f1f5f9' }}
                 >
                   {integration.name}
                 </Button>
@@ -129,7 +129,7 @@ export default function IntegrateAppsSection() {
                       height={16}
                     />
                   }
-                  sx={{ lineHeight: 1.4, color:'black', textTransform: 'none', mx: 1, px: 7, fontSize:'12px', fontWeight: '500', borderRadius:'50px', bgcolor:'#f1f5f9' }}
+                  sx={{ lineHeight: 1.6, color:'gray100', textTransform: 'none', mx: 1, px: 7, fontSize:'14px', fontWeight: '600', borderRadius:'50px', bgcolor:'#f1f5f9' }}
                 >
                   {integration.name}
                 </Button>
@@ -179,7 +179,7 @@ export default function IntegrateAppsSection() {
                       height={16}
                     />
                   }
-                  sx={{ lineHeight: 1.4, color:'black', textTransform: 'none', mx: 1, px: 7, fontSize:'12px', fontWeight: '500', borderRadius:'50px', bgcolor:'#f1f5f9' }}
+                  sx={{ lineHeight: 1.6, color:'#64748b', textTransform: 'none', mx: 1, px: 7, fontSize:'14px', fontWeight: '600', borderRadius:'50px', bgcolor:'#f1f5f9' }}
                 >
                   {integration.name}
                 </Button>
@@ -187,6 +187,12 @@ export default function IntegrateAppsSection() {
             )}
           </Box>
         </Box>
+        <Box sx={{ textAlign: 'center', mt: 4 }}>
+                <Button variant="contained" color="primary" sx={{ mr: 2 }}>
+                  Get Started
+                </Button>
+                <Button variant="text">See all integrations</Button>
+              </Box>
         </Container>
       </Box>
     );
