@@ -16,13 +16,13 @@ const Features = () => {
  
       <Container  sx={{ mb: 10 }}>
         <Box textAlign="center" mb={8}>
-          <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3 }}>
+          <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3, letterSpacing: '2px' }}>
             Features
           </Typography>
-          <Typography variant="h5" component={'h2'}  sx={{ mb: 2, fontWeight: '600' }}>
+          <Typography variant="h2" component="h2"  sx={{ mb: 2, fontWeight: '600' }}>
             Features to make you stand out
           </Typography>
-          <Typography  sx={{ maxWidth: '600px', mx: 'auto', color: 'text.secondary' }}>
+          <Typography  sx={{ maxWidth: '800px', mx: 'auto',  fontSize: '1.25rem' }}>
             Manage your projects from start to finish. With all of your projects in Block, you’ll always know who’s doing what, by when.
           </Typography>
         </Box>
@@ -37,7 +37,7 @@ const Features = () => {
                 <Typography variant="h5" sx={{ fontSize: '18px', fontWeight: '600' }} gutterBottom>
                   {feature.title}
                 </Typography>
-                <Typography variant="body1" color="textSecondary">
+                <Typography variant="body1" >
                   {feature.description}
                 </Typography>
               </Box>

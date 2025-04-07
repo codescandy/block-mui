@@ -1,7 +1,7 @@
 import { Box, Button, Chip, Container, Grid, Typography, Paper, Badge } from '@mui/material';
 import CreditCardRoundedIcon from '@mui/icons-material/CreditCardRounded';
 import MoneyRoundedIcon from '@mui/icons-material/MoneyRounded';
-import heroImage from '../public/images/app-screen-1.jpg';
+
 
 const MyComponent = () => {
   return (
@@ -38,10 +38,10 @@ const Hero = () => {
           <Grid size={{ lg: 5, xs: 12 }}>
             <Box textAlign={{ xs: 'center', lg: 'left' }}>
               <Chip label="New: Our Live collaborative just landed" variant="outlined" color="primary" sx={{ mb: 4, px: 1, py: 1, fontSize: '12px', fontWeight: '600' }} />
-              <Typography variant="h3" component="h1" sx={{ fontWeight: 600 }} gutterBottom>
+              <Typography variant="h2" component="h1" sx={{ fontSize: "3rem" }} gutterBottom>
                 Build your next project even faster.
               </Typography>
-              <Typography variant="h6" sx={{ mb: 4 }} color="text.secondary">
+              <Typography variant="body1" sx={{ mb: 4, fontSize: "1.25rem" }} color="text.secondary">
                 Block makes it easy to get your most important work done. Increase efficiency to deliver results & hit your goal on every project.
               </Typography>
               <Box>
@@ -55,13 +55,13 @@ const Hero = () => {
                   <Box  sx={{ p: 1, borderRadius: '25%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 1, borderColor: '#e0e7ff', height: '40px', width: '40px' }}>
                     <CreditCardRoundedIcon color="primary" />
                   </Box>
-                  <Typography sx={{ ml: 1, fontSize: '12px', color: 'gray' }}>No credit card required</Typography>
+                  <Typography sx={{ ml: 1, fontSize: '13px', color: 'gray' }}>No credit card required</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <Box  sx={{ p: 1, borderRadius: '25%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 1, borderColor: '#e0e7ff', height: '40px', width: '40px' }}>
                     <MoneyRoundedIcon color="primary" />
                   </Box>
-                  <Typography sx={{ ml: 1, fontSize: '12px', color: 'gray' }}>Free until upgrade</Typography>
+                  <Typography sx={{ ml: 1, fontSize: '13px', color: 'gray' }}>Free until upgrade</Typography>
                 </Box>
               </Box>
             </Box>
@@ -71,7 +71,7 @@ const Hero = () => {
           <Grid size={{ lg: 7, xs: 12 }} sx={{ mt: { xs: 5, lg: 0 } }}>
             <Box sx={{ position: 'relative' }}>
               <Box sx={{ p: { md: 4, xs: 2 }, borderRadius: 4, backgroundColor: '#f8fafc', border: 1, borderColor: '#e0e7ff' }}>
-                <img src={heroImage} alt="landing" style={{ width: '100%', borderRadius: '16px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }} />
+                <img src="/images/app-screen-1.jpg" alt="landing" style={{ width: '100%', borderRadius: '16px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }} />
               </Box>
               {/* Developer Badge */}
               <Box sx={{ position: 'absolute', top: '50%', left: 0, transform: 'translateY(-50%)', display: { xs: 'none', lg: 'block' } }}>

@@ -85,21 +85,18 @@ import {
             <Grid  size={5} sx={{ ml: { lg: '8.3333%' } }}>
     
             <Box data-cue="fadeIn">
-                <Typography
-                  variant="subtitle2"
-                  sx={{ color: 'primary.main', textTransform: 'uppercase', fontWeight: 600, letterSpacing: 1 }}
-                >
+            <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3, letterSpacing: '2px' }}>
                Collaborate
                 </Typography>
                 <Box mt={4} mb={0}>
-                  <Typography variant="h4" component="h2" fontWeight={600} gutterBottom>
+                <Typography variant="h2" component="h2"  gutterBottom>
                   Move team ideas to action, faster.
                   </Typography>
-                  <Typography variant="h6" color="text.secondary">
+                  <Typography variant="body1" sx={{ fontSize: '1.25rem', mb: 2 }} >
                   Collaborate and build total alignment on your project by adding comments to any task or document.
                   </Typography>
                 </Box>
-                <List sx={{ my: 1, color: 'text.secondary' }}>
+                <List sx={{ my: 1 }}>
     {[
       'Fusce ultricies velit fel dignissim',
       'Suspendisse potenti. Mauris et ipsum odio.',

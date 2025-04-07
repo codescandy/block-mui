@@ -39,17 +39,14 @@ import {
             {/* Left Text */}
             <Grid size= {{xs: 12, md: 6, lg: 5 }} >
               <Box data-cue="fadeIn">
-                <Typography
-                  variant="subtitle2"
-                  sx={{ color: 'primary.main', textTransform: 'uppercase', fontWeight: 600, letterSpacing: 1 }}
-                >
+              <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3, letterSpacing: '2px' }}>
                   Visualize & plan
                 </Typography>
                 <Box mt={4} mb={5}>
-                  <Typography variant="h4" component="h2" fontWeight={600} gutterBottom>
+                  <Typography variant="h2" component="h2"  gutterBottom>
                     Build the perfect workflow for every project.
                   </Typography>
-                  <Typography variant="h6" color="text.secondary">
+                  <Typography variant="body1" sx={{ fontSize: '1.25rem' }} >
                     Track your entire project from start to finish with beautiful views that make project planning a breeze.
                   </Typography>
                 </Box>
@@ -104,11 +101,12 @@ import {
                         variant="outlined"
                         sx={{
                           fontSize: 14,
-                          fontWeight: 600,
+                          fontWeight: 500,
                           borderRadius: 5,
                           bgcolor: `${item.color}.main`,
                           color: `${item.color}.contrastText`,
                           opacity: 1,
+                          border: 0,
                         }}
                       />
                     </Box>

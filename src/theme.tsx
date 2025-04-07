@@ -53,9 +53,60 @@ const theme = createTheme({
     
   },
   typography: {
-    fontFamily: "'public-sans', sans-serif",
+    fontFamily: `'public-sans', sans-serif`,
+   
+    h1: {
+      fontSize: '2.5rem',
+      fontWeight: 700,
+      lineHeight: 1.2,
+      color: '#1e293b', // Dark gray
+    },
+    h2: {
+      fontSize: '2rem',
+      fontWeight: 700,
+      lineHeight: 1.3,
+      color: '#1e293b', // Dark gray
+    },
+    h3: {
+      fontSize: '1.5rem',
+      fontWeight: 600,
+      lineHeight: 1.4,
+      color: '#1e293b', // Dark gray
+    },
+    h4: {
+      fontSize: '1.25rem',
+      fontWeight: 600,
+      color: '#1e293b', // Dark gray
+    },
+    h5: {
+      fontSize: '1rem',
+      fontWeight: 500,
+      color: '#1e293b', // Dark gray
+    },
+    h6: {
+      fontSize: '.875rem',
+      fontWeight: 500,
+      color: '#1e293b', // Dark gray
+    },
+    body1: {
+      fontSize: '1rem', // default is 16px
+      lineHeight: 1.5,
+      fontWeight: 500,
+    },
+    body2: {
+      fontSize: '0.875rem', // default is 14px
+      lineHeight: 1.43,
+      fontWeight: 500,
+    },
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          color: '#64748b', // Apply the text color to the body element
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
