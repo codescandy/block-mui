@@ -4,6 +4,7 @@ import { Box, Container, Grid, Typography, Badge } from '@mui/material';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import '../theme/swiper.css';
 
 const Clients = () => {
   const clientLogos = [
@@ -15,7 +16,7 @@ const Clients = () => {
   ];
 
   return (
-    <Box my={10} py={5}>
+    <Box my={8}>
       <Container sx={{ py:2 }} maxWidth="lg">
         <Box sx={{ display:"flex", justifyContent:"center", mb: '40px', textAlign:"center"}}>
           <Typography variant="body2" fontWeight="600" textTransform="uppercase" letterSpacing={1}>
@@ -24,17 +25,17 @@ const Clients = () => {
         </Box>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={100}
+          spaceBetween={40}
           speed={400}
           pagination={{ clickable: true }}
           navigation={false}
           autoplay={{ delay: 3000 }}
           breakpoints={{
-            480: { slidesPerView: 2 },
+            430: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 5 },
           }}
-          className="pb-6"
+          className="custom-swiper"
         >
           {clientLogos.map((logo, index) => (
             <SwiperSlide key={index}>

@@ -36,7 +36,7 @@ import {
   
   const RightImageFeatures = () => {
     return (
-      <Box component="section" sx={{ py: 0, my: { xl: 6 } }}>
+      <Box component="section" sx={{ pb: 6, my: { xl: 6 } }}>
         <Container>
           <Grid container alignItems="center" spacing={4}>
             {/* Left Text */}
@@ -55,9 +55,9 @@ import {
                   sx={{
                     position: 'absolute',
                     bottom: 0,
-                    margin: { lg: '24px' },
+                    margin:  '24px',
                     width: 'calc(100% - 48px)',
-                    mb: 2,
+                    mb: 4,
                   }}
                 >
                   {avatarData.map((item, index) => (
@@ -82,7 +82,7 @@ import {
             </Grid>
   
             {/* Right Image and Overlays */}
-            <Grid  size={5} sx={{ ml: { lg: '8.3333%' } }}>
+            <Grid  size= {{xs: 12, md: 6, lg: 5 }} sx={{ ml: { lg: '8.3333%' } }}>
     
             <Box data-cue="fadeIn">
             <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3, letterSpacing: '2px' }}>

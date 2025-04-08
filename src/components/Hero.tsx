@@ -29,11 +29,11 @@ const MyComponent = () => {
 };
 const Hero = () => {
   return (
-    <Box sx={{ pt: { lg: 0, xs: 5 } }}>
+    <Box>
       <MyComponent />
 
       <Container sx={{ pt: { lg: 7, xs: 5 }, pb: { lg: 7, xs: 5 } }} maxWidth="lg">
-        <Grid container alignItems="center" gap={8} justifyContent={{ lg: 'flex-start', xs: 'center' }} flexWrap={{ lg: 'nowrap', xs: 'wrap' }}>
+        <Grid container alignItems="center" gap={{ lg: 8 }} justifyContent={{ lg: 'flex-start', xs: 'center' }} flexWrap={{ lg: 'nowrap', xs: 'wrap' }}>
           {/* Left Content */}
           <Grid size={{ lg: 5, xs: 12 }}>
             <Box textAlign={{ xs: 'center', lg: 'left' }}>
@@ -68,7 +68,7 @@ const Hero = () => {
           </Grid>
 
           {/* Right Image */}
-          <Grid size={{ lg: 7, xs: 12 }} sx={{ mt: { xs: 5, lg: 0 } }}>
+          <Grid size={{ lg: 7, xs: 12 }} >
             <Box sx={{ position: 'relative' }}>
               <Box sx={{ p: { md: 4, xs: 2 }, borderRadius: 4, backgroundColor: '#f8fafc', border: 1, borderColor: '#e0e7ff' }}>
                 <img src="/images/app-screen-1.jpg" alt="landing" style={{ width: '100%', borderRadius: '16px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }} />

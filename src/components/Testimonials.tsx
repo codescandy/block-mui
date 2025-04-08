@@ -2,8 +2,11 @@ import { Box, Container, Grid, Typography, Card, CardContent, Avatar } from '@mu
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
+
 import 'swiper/css';
 import 'swiper/css/pagination';
+import '../theme/swiper.css';
+import { lineHeight } from '@mui/system';
 
 const testimonials = [
   {
@@ -50,20 +53,22 @@ const Testimonials = () => {
       
           autoplay={{ delay: 3000 }}
           speed={400}
+          className='custom-swiper'
+          
         >
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>
-              <Card sx={{ overflow: 'hidden', maxWidth: 1020, mx: 'auto', borderRadius: 4 }}>
-                <Grid container alignItems="center">
-                  <Grid size={{ lg: 4 }}  sx={{ display: { xs: 'none', lg: 'block' } }}>
-                    <Box component="img" src={item.image} alt="testimonial" sx={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <Card sx={{ overflow: 'hidden', maxWidth: 1020, mx: 'auto', borderRadius: 4,lineHeight: '0' }}>
+                <Grid container alignItems="center" flexWrap='nowrap'>
+                  <Grid size={{ lg: 4 }}  sx={{ display: { xs: 'none', md: 'block' } }}>
+                    <Box component="img" src={item.image} alt="testimonial" sx={{ width: '100%', maxHeight: '100%' }} />
                   </Grid>
-                  <Grid size={{ lg: 8, xs: 12 }}>
+                  <Grid size={{ lg: 8 }}>
                     <CardContent sx={{ p: { xs: 3, lg: 4 } }}>
                       <Box mb={4}>
                         <Box component="img" src={item.logo} alt="client logo" sx={{ maxWidth: 120 }} />
                       </Box>
-                      <Typography variant="body2"  sx={{ fontSize: '1.25rem'}}  mb={5}>
+                      <Typography variant="body2"  sx={{ fontSize: '1.25rem' }}  mb={5}>
                         {item.text}
                       </Typography>
                       <Typography sx={{ fontSize: '15px', fontWeight: '600'}}>{item.name}</Typography>

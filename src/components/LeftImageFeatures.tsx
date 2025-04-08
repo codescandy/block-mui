@@ -57,7 +57,7 @@ import {
             </Grid>
   
             {/* Right Image and Overlays */}
-            <Grid  size={6} sx={{ ml: { lg: '8.3333%' } }}>
+            <Grid  size= {{xs: 12, md: 6, lg: 6 }} sx={{ ml: { lg: '8.3333%' } }}>
     
               <Box sx={{ position: 'relative',  }}>
                 <Box
@@ -72,7 +72,7 @@ import {
                   sx={{
                     position: 'absolute',
                     bottom: 0,
-                    margin: { lg: '24px' },
+                    margin:  '24px',
                     width: 'calc(100% - 48px)',
                     mb: 2,
                   }}
