@@ -67,7 +67,7 @@ const Testimonials = () => {
                         {item.text}
                       </Typography>
                       <Typography sx={{ fontSize: '15px', fontWeight: '600'}}>{item.name}</Typography>
-                      <Typography variant='body2' sx={{ fontSize: '12px', fontWeight: '600'}} >
+                      <Typography variant='body2' sx={{ fontSize: '13px', color: 'text.secondary'}} >
                         {item.role}
                       </Typography>
                     </CardContent>

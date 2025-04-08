@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -66,10 +68,17 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                </MenuItem>
-              ))}
+  <MenuItem key={page} onClick={handleCloseNavMenu}>
+    <Typography
+      component={Link}
+      to={`/${page.toLowerCase()}`}
+      sx={{ textAlign: 'center', textDecoration: 'none', color: 'inherit' }}
+    >
+      {page}
+    </Typography>
+  </MenuItem>
+))}
+
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -92,11 +101,18 @@ function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: 'black', display: 'block' }}>
-                {page}
-              </Button>
-            ))}
+          {pages.map((page) => (
+  <Button
+    key={page}
+    component={Link}
+    to={`/${page.toLowerCase()}`}
+    onClick={handleCloseNavMenu}
+    sx={{ my: 2, color: 'black', display: 'block' }}
+  >
+    {page}
+  </Button>
+))}
+
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

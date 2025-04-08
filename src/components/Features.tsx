@@ -27,8 +27,8 @@ const Features = () => {
           </Typography>
         </Box>
         <Grid container spacing={7}>
-          {features.map((feature, index) => (
-            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+        {features.map((feature, index) => (
+            <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>
               <Box textAlign={{ xs: "center", md: "left" }}>
                 <Box sx={{ mb: 3, display: "flex", justifyContent: "center", alignItems: "center", width: "46px", height: "46px", borderRadius: "12px", backgroundColor: "primary.light", backgroundOpacity: 0.1 }}>
 

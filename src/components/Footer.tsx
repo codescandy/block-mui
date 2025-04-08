@@ -16,7 +16,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import BrandLogo from '../public/images/logo.svg'; // Adjust the path as necessary
+
 
 const Footer: React.FC = () => {
   const theme = useTheme();
@@ -70,7 +70,10 @@ const Footer: React.FC = () => {
     
     '& .MuiAccordionSummary-root, & .MuiAccordionSummary-content, & .MuiTypography-root': {
       opacity: 1,
-      color: 'inherit',
+      color: 'text.primary',
+      ":hover": { color: theme => theme.palette.primary.main }
+
+      
    
       
     },
@@ -78,19 +81,19 @@ const Footer: React.FC = () => {
                   
                 }}
               >
-               <AccordionSummary   sx={{ p: 0, height: '0px', }}
+               <AccordionSummary   sx={{ p: 0, height: '0px',  }}
         expandIcon={!isDesktop ? <ExpandMoreIcon /> : null} // 👈 Show icon only on mobile/iPad
         aria-controls="panel-content"
         id="panel-header"
         
       >
-                  <Typography variant="h6" sx={{ m: 0}} >{section.title}</Typography>
+                  <Typography variant="h4" component='h4' sx={{ m: 0,}} >{section.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails sx={{ p: 0 }}>
                   <Box component="ul" sx={{ listStyle: 'none', p: 0, m: 0, lineHeight: 2,  }}>
                     {section.items.map((item, i) => (
                       <li key={i}>
-                        <Link href="#" underline="none"  sx={{ fontSize: '14px', fontWeight: 500,  color: theme => theme.palette.grey[700] }}>
+                        <Link href="#" underline="none"  sx={{ fontSize: '14px', fontWeight: 500,  color: theme => theme.palette.grey[700], }}>
                           {item}
                         </Link>
                       </li>
@@ -105,10 +108,10 @@ const Footer: React.FC = () => {
         {/* Headquarters */}
         <Grid container spacing={4} sx={{ mt: 6 }}>
         <Grid size={{ xs: 12, md:7,}}>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h4" component="h4" gutterBottom>
               Headquarters
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" >
               Codescandy, 412, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka, India 560025
             </Typography>
           </Grid>
@@ -118,7 +121,7 @@ const Footer: React.FC = () => {
         <Grid container spacing={2} sx={{ mt: 6, pb: 4 }} alignItems="center">
         <Grid size={{ xs: 12, md:3,}} textAlign={{ xs: 'center', md: 'left' }}>
             <Box component="a" href="/" sx={{ display: 'inline-block' }}>
-              <img src={BrandLogo} alt="Logo" style={{ height: 36 }} />
+              <img src='/images/logo.svg' alt="Logo" style={{ height: 36 }} />
             </Box>
           </Grid>
 

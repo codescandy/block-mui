@@ -47,7 +47,7 @@ const CTA = () => {
         },
           }}
         >
-          <Typography variant="h5" component="h2" fontWeight={600} gutterBottom>
+          <Typography variant="h2" component="h2" fontWeight={600} color="white" gutterBottom>
             Try our powerful work management tools
           </Typography>
           <Typography variant="body1" mb={4} fontSize={14}>
@@ -90,7 +90,7 @@ const CTA = () => {
                 <Button
                   type="submit"
                   variant="contained"
-                  color="primary"
+                  sx={{ backgroundColor: theme => theme.palette.primary.dark }}
                   fullWidth
                  
                 >

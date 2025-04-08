@@ -20,6 +20,7 @@
     "@mui/utils": "^7.0.1",
     "react": "latest",
     "react-dom": "latest",
+    "react-router-dom": "^7.5.0",
     "swiper": "^11.2.6"
   },
   "devDependencies": {

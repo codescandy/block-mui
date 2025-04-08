@@ -1,5 +1,5 @@
 import { Box, Button, Container, Typography } from '@mui/material';
-import './theme/marquee.css';
+import '../theme/marquee.css';
 
 // JSON data for integrations
 const integrations = [
@@ -28,10 +28,10 @@ export default function IntegrateAppsSection() {
         {/* Header Section */}
         <Container maxWidth="md">
           <Box textAlign="center" mb={6} >
-            <Typography variant="h5" component="h2" fontWeight={600} marginBottom={2} gutterBottom>
+            <Typography variant="h2" component="h2" fontWeight={600} marginBottom={2} gutterBottom>
               Integrate apps with just a few clicks
             </Typography>
-            <Typography variant="body1" color="text.secondary"  sx={{ maxWidth: 700, mx: 'auto' }}>
+            <Typography variant="body1"   sx={{ maxWidth: 700, mx: 'auto', fontSize: '1.125rem', lineHeight: 1.5 }}>
               Connect your existing apps and workflows with pre-made integrations available for 400+ popular apps, plus custom integrations for more advanced users.
             </Typography>
           </Box>
@@ -129,7 +129,7 @@ export default function IntegrateAppsSection() {
                       height={16}
                     />
                   }
-                  sx={{ lineHeight: 1.6, color:'gray100', textTransform: 'none', mx: 1, px: 7, fontSize:'14px', fontWeight: '600', borderRadius:'50px', bgcolor:'#f1f5f9' }}
+                  sx={{ lineHeight: 1.6, color:'#64748b', textTransform: 'none', mx: 1, px: 7, fontSize:'15px', fontWeight: '600', borderRadius:'50px', bgcolor:'#f1f5f9' }}
                 >
                   {integration.name}
                 </Button>
