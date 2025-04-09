@@ -41,7 +41,7 @@ const Hero = () => {
               <Typography variant="h2" component="h1" sx={{ fontSize: "3rem" }} gutterBottom>
                 Build your next project even faster.
               </Typography>
-              <Typography variant="body1" sx={{ mb: 4, fontSize: "1.25rem" }} color="text.secondary">
+              <Typography variant="body1" sx={{ mb: 4, fontSize: "1.25rem" }} >
                 Block makes it easy to get your most important work done. Increase efficiency to deliver results & hit your goal on every project.
               </Typography>
               <Box>
@@ -55,13 +55,13 @@ const Hero = () => {
                   <Box  sx={{ p: 1, borderRadius: '25%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 1, borderColor: '#e0e7ff', height: '40px', width: '40px' }}>
                     <CreditCardRoundedIcon color="primary" />
                   </Box>
-                  <Typography sx={{ ml: 1, fontSize: '13px', color: 'gray' }}>No credit card required</Typography>
+                  <Typography sx={{ ml: 1 }}>No credit card required</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <Box  sx={{ p: 1, borderRadius: '25%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 1, borderColor: '#e0e7ff', height: '40px', width: '40px' }}>
                     <MoneyRoundedIcon color="primary" />
                   </Box>
-                  <Typography sx={{ ml: 1, fontSize: '13px', color: 'gray' }}>Free until upgrade</Typography>
+                  <Typography sx={{ ml: 1}}>Free until upgrade</Typography>
                 </Box>
               </Box>
             </Box>

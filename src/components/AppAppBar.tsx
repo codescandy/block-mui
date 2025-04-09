@@ -17,7 +17,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
 import LogoIcon from './LogoIcon';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Landings', 'Pricing', 'Blog', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -40,7 +40,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#fff', color: 'black' }}>
+    <AppBar position="static" sx={{ backgroundColor: '#fff', color: 'black', boxShadow: 'none', borderBottom: '1px solid #e0e0e0' }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
@@ -72,7 +72,7 @@ function ResponsiveAppBar() {
     <Typography
       component={Link}
       to={`/${page.toLowerCase()}`}
-      sx={{ textAlign: 'center', textDecoration: 'none', color: 'inherit' }}
+      sx={{ textAlign: 'center', textDecoration: 'none' }}
     >
       {page}
     </Typography>
@@ -107,7 +107,7 @@ function ResponsiveAppBar() {
     component={Link}
     to={`/${page.toLowerCase()}`}
     onClick={handleCloseNavMenu}
-    sx={{ my: 2, color: 'black', display: 'block' }}
+    sx={{ my: 2, color: 'primary.main', display: 'block' }}
   >
     {page}
   </Button>
@@ -117,7 +117,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="/images/avatar/avatar-2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu

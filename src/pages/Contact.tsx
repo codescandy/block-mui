@@ -1,19 +1,19 @@
 import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
 
-const Products = () => {
+const Contact = () => {
   return (
-    <Container maxWidth="md">
+     <Container maxWidth="md" sx={{ textAlign: 'center'}}>
       <Box sx={{ mt: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Products
+          Contact
         </Typography>
         <Typography variant="body1">
-          Welcome to the Products page. This is where you can share updates, stories, and news!
+          Welcome to the contact page.
         </Typography>
       </Box>
     </Container>
   );
 };
 
-export default Products;
+export default Contact;

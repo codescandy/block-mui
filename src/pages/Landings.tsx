@@ -1,19 +1,19 @@
 import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
 
-const Pricing = () => {
+const Landings = () => {
   return (
     <Container maxWidth="md" sx={{ textAlign: 'center'}}>
       <Box sx={{ mt: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Pricing
+          Landings
         </Typography>
         <Typography variant="body1">
-          Welcome to the Pricing page.
+          Welcome to the Landings page.
         </Typography>
       </Box>
     </Container>
   );
 };
 
-export default Pricing;
+export default Landings;

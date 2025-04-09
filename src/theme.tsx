@@ -48,7 +48,12 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: `'public-sans', sans-serif`,
+    fontFamily: [
+   
+       'Public Sans',
+      'sans-serif',
+    
+    ].join(','),
     h1: {
       fontSize: '2.5rem',
       fontWeight: 700,

@@ -3,9 +3,10 @@
 import { Routes, Route } from 'react-router-dom';
 import ResponsiveAppBar from './AppAppBar';
 
-import Products from '../pages/Products';
+import Landings from '../pages/Landings';
 import Pricing from '../pages/Pricing';
 import Blog from '../pages/Blog';
+import Contact from '../pages/Contact';
 
 // All homepage components
 import Hero from './Hero';
@@ -40,9 +41,10 @@ function App() {
       <ResponsiveAppBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/landings" element={<Landings />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
