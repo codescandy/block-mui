@@ -74,6 +74,13 @@ const CTA = () => {
   sx={{
     backgroundColor: "white",
     borderRadius: 2,
+    '& .MuiOutlinedInput-notchedOutline': {
+      border: 'none',
+    },
+    '& .MuiOutlinedInput-root': {
+      padding: 0,
+    },
+
   }}
   slotProps={{
     input: {
@@ -81,6 +88,7 @@ const CTA = () => {
         height: 44,         // Controls the input element's height
         fontSize: "0.875rem", // Text size
         padding: "0 8px",  // Left-right padding
+        outline: "none",
       },
     },
   }}
