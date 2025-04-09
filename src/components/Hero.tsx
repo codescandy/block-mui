@@ -29,7 +29,7 @@ const MyComponent = () => {
 };
 const Hero = () => {
   return (
-    <Box>
+    <Box component="section">
       <MyComponent />
 
       <Container sx={{ pt: { lg: 7, xs: 5 }, pb: { lg: 7, xs: 5 } }} maxWidth="lg">

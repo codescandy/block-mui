@@ -27,7 +27,7 @@ const CTA = () => {
             px: { xs: 3, md: 7 },
             py: { xs: 5, md: 8 },
             textAlign: "center",
-            color: "#fff",
+            color: "white",
             position: "relative",
             zIndex: 1,
             '&::after': {
@@ -72,7 +72,7 @@ const CTA = () => {
   size="small"
   required
   sx={{
-    backgroundColor: "#fff",
+    backgroundColor: "white",
     borderRadius: 2,
   }}
   slotProps={{
@@ -90,7 +90,7 @@ const CTA = () => {
                 <Button
                   type="submit"
                   variant="contained"
-                  sx={{ backgroundColor: theme => theme.palette.primary.dark }}
+                  sx={{ backgroundColor: 'primary.dark'}}
                   fullWidth
                  
                 >

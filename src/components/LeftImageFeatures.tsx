@@ -74,7 +74,7 @@ import {
                     bottom: 0,
                     margin:  '24px',
                     width: 'calc(100% - 48px)',
-                    mb: 2,
+                    mb: 4,
                   }}
                 >
                   {avatarData.map((item, index) => (

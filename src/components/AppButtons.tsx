@@ -24,7 +24,7 @@ const integrations = [
 
 export default function IntegrateAppsSection() {
     return (
-      <Box sx={{ py: 8 }}>
+      <Box component="section" sx={{ py: 8 }}>
         {/* Header Section */}
         <Container maxWidth="md">
           <Box textAlign="center" mb={6} >

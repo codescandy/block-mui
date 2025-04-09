@@ -16,7 +16,7 @@ const Clients = () => {
   ];
 
   return (
-    <Box my={8}>
+    <Box component="section" my={8}>
       <Container sx={{ py:2 }} maxWidth="lg">
         <Box sx={{ display:"flex", justifyContent:"center", mb: '40px', textAlign:"center"}}>
           <Typography variant="body2" fontWeight="600" textTransform="uppercase" letterSpacing={1}>

@@ -70,8 +70,8 @@ const Footer: React.FC = () => {
     
     '& .MuiAccordionSummary-root, & .MuiAccordionSummary-content, & .MuiTypography-root': {
       opacity: 1,
-      color: 'text.primary',
-      ":hover": { color: theme => theme.palette.primary.main }
+      
+      ":hover": { color: 'primary.main' }
 
       
    
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
                   <Box component="ul" sx={{ listStyle: 'none', p: 0, m: 0, lineHeight: 2,  }}>
                     {section.items.map((item, i) => (
                       <li key={i}>
-                        <Link href="#" underline="none"  sx={{ fontSize: '14px', fontWeight: 500,  color: theme => theme.palette.grey[700], }}>
+                        <Link href="#" underline="none"  sx={{ fontWeight: 500,  color: 'grey.600', }}>
                           {item}
                         </Link>
                       </li>

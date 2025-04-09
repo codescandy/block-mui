@@ -4,56 +4,64 @@ import "@fontsource/public-sans"; // Defaults to weight 400 with normal style
 const theme = createTheme({
   cssVariables: true,
   palette: {
-    grey: {
-      50: "#f9f9f9",
-      100: "#f0f0f0",
-      200: "#e0e0e0",
-      300: "#c0c0c0",
-      400: "#a0a0a0",
-      500: "#808080",
-      600: "#707070",
-      700: "#505050",
-      800: "#404040",
-      900: "#202020",
+    grey: { 
+100: "#f1f5f9",
+200: "#e2e8f0",
+300: "#cbd5e1",
+400: "#94a3b8",
+500: "#64748b",
+600: "#475569",
+700: "#334155",
+800: "#1e293b",
+900: "#0f172a",
+
     },
     primary: {
       main: "#8b3dff",
       light: "#e8d8ff",
-      dark: "#6f31cc",
+      dark: "#532599",
     },
     secondary: {
-      main: "#9C27B0",
-      light: "#BA68C8",
-      dark: "#7B1FA2",
+      main: "#e2e8f0",
+      light: "#f9fafc",
+      dark: "#2d2e30",
     },
     success: {
-      main: "#4CAF50",
-      light: "#81C784",
-      dark: "#388E3C",
+      main: "#008008",
+      light: "#cce6ce",
+      dark: "#001a02",
     },
     warning: {
-      main: "#FF9800",
-      light: "#FFB74D",
-      dark: "#F57C00",
+      main: "#ffc107",
+      light: "#fff3cd",
+      dark: "#332701",
     },
     error: {
-      main: "#D32F2F",
-      light: "#E57373",
-      dark: "#C62828",
+      main: "#db1436",
+      light: "#f8d0d7",
+      dark: "#2c040b",
     },
     info: {
       main: "#0dcaf0",
-      light: "#4FC3F7",
-      dark: "#01579B",
+      light: "#cff4fc",
+      dark: "#032830",
     },
   },
   typography: {
     fontFamily: [
-   
-       'Public Sans',
+      'Public Sans',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
       'sans-serif',
-    
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
     ].join(','),
+  
     h1: {
       fontSize: '2.5rem',
       fontWeight: 700,

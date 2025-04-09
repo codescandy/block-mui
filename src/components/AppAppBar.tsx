@@ -40,7 +40,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#fff', color: 'black', boxShadow: 'none', borderBottom: '1px solid #e0e0e0' }}>
+    <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none', borderBottom: '1px solid #e0e0e0' }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
@@ -107,7 +107,8 @@ function ResponsiveAppBar() {
     component={Link}
     to={`/${page.toLowerCase()}`}
     onClick={handleCloseNavMenu}
-    sx={{ my: 2, color: 'primary.main', display: 'block' }}
+    
+    sx={{color: 'grey.800', display: 'block', my: 2 , fontWeight: 400,  }}
   >
     {page}
   </Button>

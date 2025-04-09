@@ -13,8 +13,9 @@ const features = [
 
 const Features = () => {
   return (
- 
-      <Container  sx={{ mb: 10 }}>
+    <Box
+    component="section"   sx={{ mb: 10 }} >
+      <Container>
         <Box textAlign="center" mb={8}>
           <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3, letterSpacing: '2px' }}>
             Features
@@ -46,6 +47,7 @@ const Features = () => {
           ))}
         </Grid>
       </Container>
+      </Box>
     
   );
 };
