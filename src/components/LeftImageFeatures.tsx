@@ -9,7 +9,7 @@ import {
     Stack,
   } from '@mui/material';
   import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-  
+
   const avatarData = [
     {
       name: 'Jitu Doe',
@@ -30,7 +30,7 @@ import {
       color: 'success',
     },
   ];
-  
+
   const LeftImageFeatures = () => {
     return (
       <Box component="section" sx={{ py: 10, my: { xl: 14 } }}>
@@ -38,7 +38,7 @@ import {
           <Grid container alignItems="center" spacing={4}>
             {/* Left Text */}
             <Grid size= {{xs: 12, md: 6, lg: 5 }} >
-              <Box data-cue="fadeIn">
+              <Box>
               <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3, letterSpacing: '2px' }}>
                   Visualize & plan
                 </Typography>
@@ -55,10 +55,10 @@ import {
                 </Button>
               </Box>
             </Grid>
-  
+
             {/* Right Image and Overlays */}
             <Grid  size= {{xs: 12, md: 6, lg: 6 }} sx={{ ml: { lg: '8.3333%' } }}>
-    
+
               <Box sx={{ position: 'relative',  }}>
                 <Box
                   component="img"
@@ -66,7 +66,7 @@ import {
                   alt="landing"
                   sx={{ borderRadius: 4, width: '100%' }}
                 />
-  
+
                 <Stack
                   spacing={2}
                   sx={{
@@ -119,6 +119,5 @@ import {
       </Box>
     );
   };
-  
+
   export default LeftImageFeatures;
-  

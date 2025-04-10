@@ -5,7 +5,7 @@ import {
     Typography,
     Button,
     Avatar,
-    List, 
+    List,
     ListItem,
     ListItemIcon,
     ListItemText,
@@ -13,34 +13,34 @@ import {
   } from '@mui/material';
   import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
   import CheckCircleOutlined from '@mui/icons-material/CheckCircleOutlined';
-  
+
   const avatarData = [
     {
-      
+
       img: '/images/avatar/avatar-4.jpg',
-     
+
     },
     {
-      
+
       img: '/images/avatar/avatar-5.jpg',
-     
+
     },
     {
-      
+
         img: '/images/avatar/avatar-6.jpg',
-       
+
       },
-      
-    
+
+
   ];
-  
+
   const RightImageFeatures = () => {
     return (
       <Box component="section" sx={{ pb: 6, my: { xl: 6 } }}>
         <Container>
           <Grid container alignItems="center" spacing={4}>
             {/* Left Text */}
-            
+
             <Grid size= {{xs: 12, md: 6, lg: 6 }} >
             <Box sx={{ position: 'relative',  }}>
                 <Box
@@ -49,7 +49,7 @@ import {
                   alt="landing"
                   sx={{ borderRadius: 4, width: '100%' }}
                 />
-  
+
                 <Stack
                   spacing={2}
                   sx={{
@@ -66,25 +66,25 @@ import {
                       sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                                              
+
                       }}
                     >
                       <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <Avatar src={item.img} sx={{ width: 40, height: 40, }} />
-                       
+
                       </Box>
-                     
+
                     </Box>
                   ))}
                 </Stack>
               </Box>
-            
+
             </Grid>
-  
+
             {/* Right Image and Overlays */}
             <Grid  size= {{xs: 12, md: 6, lg: 5 }} sx={{ ml: { lg: '8.3333%' } }}>
-    
-            <Box data-cue="fadeIn">
+
+            <Box >
             <Typography variant="subtitle2" color="primary" fontWeight={600} textTransform="uppercase" sx={{ mb: 3, letterSpacing: '2px' }}>
                Collaborate
                 </Typography>
@@ -120,6 +120,5 @@ import {
       </Box>
     );
   };
-  
+
   export default RightImageFeatures;
-  
