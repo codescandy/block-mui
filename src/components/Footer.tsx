@@ -1,17 +1,16 @@
 
-import {
-  Box,
-  Container,
-  Grid,
-  Typography,
-  Link,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  IconButton,
-  useMediaQuery,
-  useTheme,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import IconButton from '@mui/material/IconButton';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+
 import React, { useState } from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import InstagramIcon from '@mui/icons-material/Instagram';

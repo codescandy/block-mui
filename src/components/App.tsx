@@ -2,7 +2,7 @@
 
 import { Routes, Route } from 'react-router-dom';
 import ResponsiveAppBar from './AppAppBar';
-
+import React, { lazy } from 'react';
 import Landings from '../pages/Landings';
 import Pricing from '../pages/Pricing';
 import Blog from '../pages/Blog';
@@ -17,7 +17,8 @@ import RightImageFeatures from './RightImageFeatures';
 import Testimonials from './Testimonials';
 import AppButtons from './AppButtons';
 import Cta from './Cta';
-import Footer from './Footer';
+
+const Footer = lazy(() => import('./Footer'));
 
 function Home() {
   return (
