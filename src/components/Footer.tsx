@@ -12,6 +12,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
+import React, { useState } from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -21,7 +22,10 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 const Footer: React.FC = () => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('md')); // md and up
-
+  const [expandedSection, setExpandedSection] = useState<string | false>(false);
+  const handleAccordionChange = (panel: string) => (_event: React.SyntheticEvent, isExpanded: boolean) => {
+    setExpandedSection(isExpanded ? panel : false);
+  };
   const footerSections = [
     {
       title: 'Service',
@@ -47,19 +51,21 @@ const Footer: React.FC = () => {
     },
   ];
 
-  
+
   return (
     <Box component="footer" sx={{ pt: 8, bgcolor: 'background.default' }}>
       <Container>
         <Grid container spacing={0}>
-          {footerSections.map((section, idx) => (
-     
+        {footerSections.map((section, idx) => {
+              const panelId = `panel-${idx}`;
+              return (
             <Grid sx={{ gap: 0 }} size={{ xs: 12, md:3,  }} key={idx}>
               <Accordion
-                defaultExpanded={isDesktop}
-                disabled={isDesktop} 
-               
-                
+                expanded={isDesktop || expandedSection === panelId}
+                onChange={handleAccordionChange(panelId)}
+                disabled={isDesktop}
+
+
                 sx={{
                   boxShadow: 'none',
                   bgcolor: 'transparent',
@@ -67,25 +73,25 @@ const Footer: React.FC = () => {
     opacity: 1,
     backgroundColor: 'transparent',
     color: 'inherit',
-    
+
     '& .MuiAccordionSummary-root, & .MuiAccordionSummary-content, & .MuiTypography-root': {
       opacity: 1,
-      
+
       ":hover": { color: 'primary.main' }
 
-      
-   
-      
+
+
+
     },
   },
-                  
+
                 }}
               >
                <AccordionSummary   sx={{ p: 0, height: '0px',  }}
         expandIcon={!isDesktop ? <ExpandMoreIcon /> : null} // 👈 Show icon only on mobile/iPad
         aria-controls="panel-content"
         id="panel-header"
-        
+
       >
                   <Typography variant="h4" component='h4' sx={{ m: 0,}} >{section.title}</Typography>
                 </AccordionSummary>
@@ -102,7 +108,8 @@ const Footer: React.FC = () => {
                 </AccordionDetails>
               </Accordion>
             </Grid>
-          ))}
+             );
+     })}
         </Grid>
 
         {/* Headquarters */}

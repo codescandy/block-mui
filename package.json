@@ -8,12 +8,18 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+"browserslist": [
+  "Edge >= 121",
+  "Firefox >= 115",
+  "Chrome >= 109",
+  "Safari >= 15.4",
+  "iOS >= 15.4"
+],
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@fontsource/inter": "^5.2.5",
     "@fontsource/public-sans": "^5.2.5",
-    "@mui/base": "^7.0.0-beta.4",
     "@mui/icons-material": "^7.0.1",
     "@mui/material": "latest",
     "@mui/system": "^7.0.1",
@@ -26,8 +32,15 @@
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
     "@vitejs/plugin-react": "latest",
-    "rollup-plugin-visualizer": "^5.14.0",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "typescript": "latest",
     "vite": "latest"
   }
