@@ -1,8 +1,11 @@
 {
-  "name": "material-ui-vite-ts",
+  "name": "block-ui-free",
   "private": true,
-  "version": "5.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": {
+     "name": "codescandy"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -18,7 +21,6 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
-    "@fontsource/inter": "^5.2.5",
     "@fontsource/public-sans": "^5.2.5",
     "@mui/icons-material": "^7.0.1",
     "@mui/material": "latest",
