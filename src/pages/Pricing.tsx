@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
 
 const Pricing = () => {
