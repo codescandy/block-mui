@@ -4,16 +4,11 @@ import { Box, Container, Grid, Typography, Badge } from '@mui/material';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../theme/swiper.css';
+import '../styles/swiper.css';
+import clientLogos from '../data/clientLogos';// Assuming you have a file with client logos
 
 const Clients = () => {
-  const clientLogos = [
-    '/images/client-logo/clients-logo-1.svg',
-    '/images/client-logo/clients-logo-2.svg',
-    '/images/client-logo/clients-logo-3.svg',
-    '/images/client-logo/clients-logo-4.svg',
-    '/images/client-logo/clients-logo-5.svg',
-  ];
+
 
   return (
     <Box component="section" my={8}>

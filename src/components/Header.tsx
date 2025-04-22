@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,7 +13,6 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
 import LogoIcon from './LogoIcon';
 
 const pages = ['Landings', 'Pricing', 'Blog', 'Contact'];
@@ -107,7 +105,7 @@ function ResponsiveAppBar() {
     component={Link}
     to={`/${page.toLowerCase()}`}
     onClick={handleCloseNavMenu}
-    
+
     sx={{color: 'grey.800', display: 'block', my: 2 , fontWeight: 400,  }}
   >
     {page}

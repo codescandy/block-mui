@@ -4,7 +4,8 @@ import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter } from 'react-router-dom';
 import theme from './theme';
-import App from './components/App';
+import App from './pages/LandingSass';
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -12,6 +13,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <App />
+
+
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>

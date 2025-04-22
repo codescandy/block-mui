@@ -1,36 +1,12 @@
 import { Box, Container, Grid, Typography, Card, CardContent, Avatar } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-
-
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '../theme/swiper.css';
-import { lineHeight } from '@mui/system';
+import '../styles/swiper.css';
+import testimonials from '../data/testimonials';
 
-const testimonials = [
-  {
-    image: '/images/testimonial/testimonial-img-1.jpg',
-    logo: '/images/client-logo/logoipsum-3.svg',
-    text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."`,
-    name: 'Katherine Moss',
-    role: 'Operational Manager at Block Studio',
-  },
-  {
-    image: '/images/testimonial/testimonial-img-2.jpg',
-    logo: '/images/client-logo/logoipsum-2.svg',
-    text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."`,
-    name: 'John Doe',
-    role: 'CTO at PixelCraft',
-  },
-  {
-    image: '/images/testimonial/testimonial-img-3.jpg',
-    logo: '/images/client-logo/logoipsum-1.svg',
-    text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."`,
-    name: 'Samantha Lee',
-    role: 'Product Designer at Creatify',
-  },
-];
+
 
 const Testimonials = () => {
   return (
@@ -50,11 +26,11 @@ const Testimonials = () => {
           spaceBetween={50}
           slidesPerView={1}
           pagination={{ clickable: true }}
-      
+
           autoplay={{ delay: 3000 }}
           speed={400}
           className='custom-swiper'
-          
+
         >
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>

@@ -16,6 +16,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import footerSections from '../data/footer'; // adjust path as needed
 
 
 const Footer: React.FC = () => {
@@ -25,32 +26,6 @@ const Footer: React.FC = () => {
   const handleAccordionChange = (panel: string) => (_event: React.SyntheticEvent, isExpanded: boolean) => {
     setExpandedSection(isExpanded ? panel : false);
   };
-  const footerSections = [
-    {
-      title: 'Service',
-      items: [
-        'Web App Development',
-        'Front End Development',
-        'MVP Development',
-        'Digital Marketing',
-        'Content Writing',
-      ],
-    },
-    {
-      title: 'About Us',
-      items: ['Case Studies', 'Blog', 'Services', 'About', 'Career'],
-    },
-    {
-      title: 'Technology',
-      items: ['Next.js', 'Sanity', 'Contentful', 'Vercel', 'Netlify'],
-    },
-    {
-      title: 'Locations',
-      items: ['India', 'Australia', 'Brazil', 'Canada'],
-    },
-  ];
-
-
   return (
     <Box component="footer" sx={{ pt: 8, bgcolor: 'background.default' }}>
       <Container>

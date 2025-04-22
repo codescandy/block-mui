@@ -1,24 +1,24 @@
 
 
 import { Routes, Route } from 'react-router-dom';
-import ResponsiveAppBar from './AppAppBar';
+import ResponsiveAppBar from '../components/Header';
 import React, { lazy } from 'react';
-import Landings from '../pages/Landings';
-import Pricing from '../pages/Pricing';
-import Blog from '../pages/Blog';
-import Contact from '../pages/Contact';
+import Landings from './Landings';
+import Pricing from './Pricing';
+import Blog from './Blog';
+import Contact from './Contact';
 
 // All homepage components
-import Hero from './Hero';
-import Clients from './Clients';
-import Features from './Features';
-import LeftImageFeatures from './LeftImageFeatures';
-import RightImageFeatures from './RightImageFeatures';
-import Testimonials from './Testimonials';
-import AppButtons from './AppButtons';
-import Cta from './Cta';
+import Hero from '../blocks/Hero';
+import Clients from '../blocks/Clients';
+import Features from '../blocks/Features';
+import LeftImageFeatures from '../blocks/LeftImageFeatures';
+import RightImageFeatures from '../blocks/RightImageFeatures';
+import Testimonials from '../blocks/Testimonials';
+import AppButtons from '../blocks/AppButtons';
+import Cta from '../blocks/Cta';
 
-const Footer = lazy(() => import('./Footer'));
+const Footer = lazy(() => import('../components/Footer'));
 
 function Home() {
   return (
