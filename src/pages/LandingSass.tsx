@@ -7,7 +7,6 @@ import Landings from './Landings';
 import Pricing from './Pricing';
 import Blog from './Blog';
 import Contact from './Contact';
-
 // All homepage components
 import Hero from '../blocks/Hero';
 import Clients from '../blocks/Clients';

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Typography, Container, Box } from '@mui/material';
 
 const Blog = () => {
@@ -9,7 +9,7 @@ const Blog = () => {
           Blog
         </Typography>
         <Typography variant="body1">
-          Welcome to the blog page. 
+          Welcome to the blog page.
         </Typography>
       </Box>
     </Container>

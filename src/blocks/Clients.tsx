@@ -12,8 +12,8 @@ const Clients = () => {
 
   return (
     <Box component="section" my={8}>
-      <Container sx={{ py:2 }} maxWidth="lg">
-        <Box sx={{ display:"flex", justifyContent:"center", mb: '40px', textAlign:"center"}}>
+      <Container sx={{ py: 2 }} maxWidth="lg">
+        <Box sx={{ display: "flex", justifyContent: "center", mb: '40px', textAlign: "center" }}>
           <Typography variant="body2" fontWeight="600" textTransform="uppercase" letterSpacing={1}>
             Trusted by <Typography component="span" fontWeight="700" color="text.primary">20,000+</Typography> organizations worldwide
           </Typography>

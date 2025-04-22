@@ -6,22 +6,22 @@ import integrations from '../data/integrations'; // JSON data for integrations
 
 
 export default function IntegrateAppsSection() {
-    return (
-      <Box component="section" sx={{ py: 8 }}>
-        {/* Header Section */}
-        <Container maxWidth="md">
-          <Box textAlign="center" mb={6} >
-            <Typography variant="h2" component="h2" fontWeight={600} marginBottom={2} gutterBottom>
-              Integrate apps with just a few clicks
-            </Typography>
-            <Typography variant="body1"   sx={{ maxWidth: 700, mx: 'auto', fontSize: '1.125rem', lineHeight: 1.5 }}>
-              Connect your existing apps and workflows with pre-made integrations available for 400+ popular apps, plus custom integrations for more advanced users.
-            </Typography>
-          </Box>
-        </Container>
+  return (
+    <Box component="section" sx={{ py: 8 }}>
+      {/* Header Section */}
+      <Container maxWidth="md">
+        <Box textAlign="center" mb={6} >
+          <Typography variant="h2" component="h2" fontWeight={600} marginBottom={2} gutterBottom>
+            Integrate apps with just a few clicks
+          </Typography>
+          <Typography variant="body1" sx={{ maxWidth: 700, mx: 'auto', fontSize: '1.125rem', lineHeight: 1.5 }}>
+            Connect your existing apps and workflows with pre-made integrations available for 400+ popular apps, plus custom integrations for more advanced users.
+          </Typography>
+        </Box>
+      </Container>
 
-        {/* Marquee Section */}
-        <Container maxWidth="lg" sx={{ mb: 2 }}>
+      {/* Marquee Section */}
+      <Container maxWidth="lg" sx={{ mb: 2 }}>
         <Box
           className="marquee-wrapper"
           sx={{
@@ -62,7 +62,7 @@ export default function IntegrateAppsSection() {
                       height={16}
                     />
                   }
-                  sx={{ lineHeight: 1.6, color:'#64748b', textTransform: 'none', mx: 1, px: 7, fontSize:'14px', fontWeight: '600', borderRadius:'50px', bgcolor:'#f1f5f9' }}
+                  sx={{ lineHeight: 1.6, color: '#64748b', textTransform: 'none', mx: 1, px: 7, fontSize: '14px', fontWeight: '600', borderRadius: '50px', bgcolor: '#f1f5f9' }}
                 >
                   {integration.name}
                 </Button>
@@ -70,8 +70,8 @@ export default function IntegrateAppsSection() {
             )}
           </Box>
         </Box>
-        </Container>
-        <Container maxWidth="md" sx={{ mb: 2 }}>
+      </Container>
+      <Container maxWidth="md" sx={{ mb: 2 }}>
         <Box
           className="marquee-wrapper"
           sx={{
@@ -112,7 +112,7 @@ export default function IntegrateAppsSection() {
                       height={16}
                     />
                   }
-                  sx={{ lineHeight: 1.6, color:'#64748b', textTransform: 'none', mx: 1, px: 7, fontSize:'15px', fontWeight: '600', borderRadius:'50px', bgcolor:'#f1f5f9' }}
+                  sx={{ lineHeight: 1.6, color: '#64748b', textTransform: 'none', mx: 1, px: 7, fontSize: '15px', fontWeight: '600', borderRadius: '50px', bgcolor: '#f1f5f9' }}
                 >
                   {integration.name}
                 </Button>
@@ -120,8 +120,8 @@ export default function IntegrateAppsSection() {
             )}
           </Box>
         </Box>
-        </Container>
-        <Container maxWidth="lg" sx={{ mb: 2 }}>
+      </Container>
+      <Container maxWidth="lg" sx={{ mb: 2 }}>
         <Box
           className="marquee-wrapper"
           sx={{
@@ -162,7 +162,7 @@ export default function IntegrateAppsSection() {
                       height={16}
                     />
                   }
-                  sx={{ lineHeight: 1.6, color:'#64748b', textTransform: 'none', mx: 1, px: 7, fontSize:'14px', fontWeight: '600', borderRadius:'50px', bgcolor:'#f1f5f9' }}
+                  sx={{ lineHeight: 1.6, color: '#64748b', textTransform: 'none', mx: 1, px: 7, fontSize: '14px', fontWeight: '600', borderRadius: '50px', bgcolor: '#f1f5f9' }}
                 >
                   {integration.name}
                 </Button>
@@ -171,12 +171,12 @@ export default function IntegrateAppsSection() {
           </Box>
         </Box>
         <Box sx={{ textAlign: 'center', mt: 4 }}>
-                <Button variant="contained" color="primary" sx={{ mr: 2 }}>
-                  Get Started
-                </Button>
-                <Button variant="text">See all integrations</Button>
-              </Box>
-        </Container>
-      </Box>
-    );
-  }
+          <Button variant="contained" color="primary" sx={{ mr: 2 }}>
+            Get Started
+          </Button>
+          <Button variant="text">See all integrations</Button>
+        </Box>
+      </Container>
+    </Box>
+  );
+}

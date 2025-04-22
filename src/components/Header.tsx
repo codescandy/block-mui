@@ -66,16 +66,16 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-  <MenuItem key={page} onClick={handleCloseNavMenu}>
-    <Typography
-      component={Link}
-      to={`/${page.toLowerCase()}`}
-      sx={{ textAlign: 'center', textDecoration: 'none' }}
-    >
-      {page}
-    </Typography>
-  </MenuItem>
-))}
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography
+                    component={Link}
+                    to={`/${page.toLowerCase()}`}
+                    sx={{ textAlign: 'center', textDecoration: 'none' }}
+                  >
+                    {page}
+                  </Typography>
+                </MenuItem>
+              ))}
 
             </Menu>
           </Box>
@@ -99,18 +99,18 @@ function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-          {pages.map((page) => (
-  <Button
-    key={page}
-    component={Link}
-    to={`/${page.toLowerCase()}`}
-    onClick={handleCloseNavMenu}
+            {pages.map((page) => (
+              <Button
+                key={page}
+                component={Link}
+                to={`/${page.toLowerCase()}`}
+                onClick={handleCloseNavMenu}
 
-    sx={{color: 'grey.800', display: 'block', my: 2 , fontWeight: 400,  }}
-  >
-    {page}
-  </Button>
-))}
+                sx={{ color: 'grey.800', display: 'block', my: 2, fontWeight: 400, }}
+              >
+                {page}
+              </Button>
+            ))}
 
           </Box>
           <Box sx={{ flexGrow: 0 }}>

@@ -17,7 +17,7 @@ const CTA = () => {
     <Box
       component="section"
       py={5}
-   
+
     >
       <Container maxWidth="lg">
         <Box
@@ -31,20 +31,20 @@ const CTA = () => {
             position: "relative",
             zIndex: 1,
             '&::after': {
-          content: '""',
-          backgroundImage: "url('/images/pattern-square.svg')",
-          backgroundPosition: 'top',
-          position: 'absolute',
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: '312px',
-          padding: '40px 0',
-          maskImage: 'linear-gradient(0deg, transparent 55%, rgb(0, 0, 0) 75%)',
-          WebkitMaskImage: 'linear-gradient(0deg, transparent 55%, rgb(0, 0, 0) 75%)',
-          zIndex: -1,
-        },
+              content: '""',
+              backgroundImage: "url('/images/pattern-square.svg')",
+              backgroundPosition: 'top',
+              position: 'absolute',
+              top: 0,
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: '312px',
+              padding: '40px 0',
+              maskImage: 'linear-gradient(0deg, transparent 55%, rgb(0, 0, 0) 75%)',
+              WebkitMaskImage: 'linear-gradient(0deg, transparent 55%, rgb(0, 0, 0) 75%)',
+              zIndex: -1,
+            },
           }}
         >
           <Typography variant="h2" component="h2" fontWeight={600} color="white" gutterBottom>
@@ -63,44 +63,44 @@ const CTA = () => {
             }}
           >
             <Grid container spacing={2} justifyContent="center" maxWidth="sm" mx="auto">
-              <Grid size={{ xs: 12, md:7 }} >
-              <TextField
-  fullWidth
-  type="email"
-  placeholder="Enter your business email"
-  variant="outlined"
-  size="small"
-  required
-  sx={{
-    backgroundColor: "white",
-    borderRadius: 2,
-    '& .MuiOutlinedInput-notchedOutline': {
-      border: 'none',
-    },
-    '& .MuiOutlinedInput-root': {
-      padding: 0,
-    },
+              <Grid size={{ xs: 12, md: 7 }} >
+                <TextField
+                  fullWidth
+                  type="email"
+                  placeholder="Enter your business email"
+                  variant="outlined"
+                  size="small"
+                  required
+                  sx={{
+                    backgroundColor: "white",
+                    borderRadius: 2,
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      border: 'none',
+                    },
+                    '& .MuiOutlinedInput-root': {
+                      padding: 0,
+                    },
 
-  }}
-  slotProps={{
-    input: {
-      sx: {
-        height: 44,         // Controls the input element's height
-        fontSize: "0.875rem", // Text size
-        padding: "0 8px",  // Left-right padding
-        outline: "none",
-      },
-    },
-  }}
-/>
+                  }}
+                  slotProps={{
+                    input: {
+                      sx: {
+                        height: 44,         // Controls the input element's height
+                        fontSize: "0.875rem", // Text size
+                        padding: "0 8px",  // Left-right padding
+                        outline: "none",
+                      },
+                    },
+                  }}
+                />
               </Grid>
-              <Grid size={{ xs: 12, md:5 }} >
+              <Grid size={{ xs: 12, md: 5 }} >
                 <Button
                   type="submit"
                   variant="contained"
-                  sx={{ backgroundColor: 'primary.dark'}}
+                  sx={{ backgroundColor: 'primary.dark' }}
                   fullWidth
-                 
+
                 >
                   Get notified for free
                 </Button>
